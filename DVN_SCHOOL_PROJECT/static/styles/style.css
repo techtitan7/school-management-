@@ -1,0 +1,71 @@
+*{
+    font-family: "Inter", serif;
+}
+
+.navbarmain{
+    background-color: aquamarine;
+}
+.hed{
+    
+   margin-top: 20px;
+
+}
+.carousel-item{
+    
+    transition: transform 2s ease, opacity .2s ease-out ;
+    
+}
+.centercard{
+
+    border: 1px solid black;
+    height: 100%;
+    box-shadow:  5px 5px 10px #251919,
+    -5px -5px 10px #221616;
+
+}
+.immg{
+    height: 350px;
+}
+.foot{
+    width: 50px;
+    
+    height: 100px;
+}
+
+.button1{
+    box-shadow:  5px 5px 10px #f5e2e2,
+             -5px -5px 10px #ffffff;
+}
+.mrq{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    margin-top: 5px;
+   
+
+}
+.marquee-text{
+    font-weight: 800;
+    color: rgb(25, 10, 238);
+   
+}
+
+.marquee-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: scrollUp 10s linear infinite;
+}
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
