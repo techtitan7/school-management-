@@ -1,6 +1,6 @@
 # 🎓 School Management System - *myproject*  
 
-Welcome to **myproject** by [@webdevabhi91](https://github.com/webdevabhi91)!  
+Welcome to **myproject** by [@techtitan7](https://github.com/techtitan7)!  
 This is a **Django-based School Management System** designed to simplify managing student results and data for schools.
 
 ---
