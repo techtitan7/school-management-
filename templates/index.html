@@ -1,0 +1,418 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/media.css" /> -->
+  
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/media.css' %}">
+
+
+    <title>Deepeshwer_Vidya_Niketan_parsagarh</title>
+
+  </head>
+  <body>
+    <div class="container hed ">
+
+      <div class="row ">
+        <div class="col-lg-2 col-sm-2 col-2 m-0 p-0 ">
+          <div>
+
+            <img src="{% static 'images/dvnlogo.png' %}" alt class="img-fluid logo gy-2">
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-sm-8 col-8 m-0 p-0  ">
+          <div>
+            <img src="{% static 'images/deep.jpg' %}" alt class="img-fluid logo">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-2 col-2 m-0 p-0 ">
+          <div>
+            <img src="{% static 'images/maa.png' %}" alt class="img-fluid   ">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbarmain sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href width="20px">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link" href="#">SLLYABUS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                LOG IN AS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/signup">Students log in</a></li>
+                <li><a class="dropdown-item" href="#">Teachers log in</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Admin</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/addmissionform">ADMISSION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RESULTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTECT US</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search">
+            <button class="btn btn-outline-success"
+              type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <h4 style="color: red; text-align:center;">This website is under development......</h4>
+    <div style="border: 0.1;  background: #e0e0e0;
+    box-shadow: inset 5px 5px 10px #676767,
+                inset -5px -5px 10px #ffffff; margin-top: 5px; margin-bottom: 5px;">
+      <marquee behavior="scroll loop " scrollamount="20" loop="infinite"
+        direction="left" class="mrq"><h2 class="marquee-text" style="font-size:45px;">Welcome to the
+          <span>DEEPESHWER VIDYA NIKETAN</span> Official Website.</h2></marquee>
+    </div>
+    <div class="carousel slide" id="slider1" data-bs-ride="carousel" data-bs-interval="2000"  data-bs-pause="false">
+      <div class="carousel-indicators">
+        <button type="button"
+          data-bs-target="#slider1"
+          data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button"
+          data-bs-target="#slider1"
+          data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button"
+          data-bs-target="#slider1"
+          data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+
+          <img src="{% static 'images/dvn student.jpg' %}"
+            alt=".." class="d-block w-100" class="img-fluid">
+
+        </div>
+
+        <div class="carousel-item">
+          <img src="{% static 'images/Deepeshwer_Vidya_Niketan_parsagarh_saran_Bihar.jpg' %}" alt=".." class="d-block w-100"
+            class="img-fluid">
+
+        </div><div class="carousel-item">
+          <img src="{% static 'images/dvn student 2.jpg' %}" alt=".." class="d-block w-100"
+            class="img-fluid">
+
+        </div>
+
+      </div>
+      <button class="carousel-control-prev " type="button"
+        data-bs-target="#slider1"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"
+          aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#slider1"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"
+          aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container-fluid"
+      style="background-color:#FFFFFF; margin-top:50px">
+      <div class="row">
+        <div class="col-lg-4   col-sm-12  col-12">
+          <div class="card" style="min-height:388px;max-height:388px;">
+            <h5 class="card-header" style="color:#af0202"><strong><center>
+                  <i class="fa fa-bullhorn"
+                    style="font-size:36px;color:red"></i> NOTICE
+                  BOARD</center></strong></h5>
+            <div class="card-body marquee-container">
+              <div class="marquee-content">
+                <center>
+
+                  <p><img src="{% static 'images/new_red.gif' %}"
+                      alt="New Notice">Admission open Now.....<br><a
+                      href class="btn btn-sm">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2025-01-02</span></p><p><img
+                      src="{% static 'images/new_red.gif' %}" alt="New Notice">Admission
+                    open Now.....<br><a
+                      href
+                      class="btn btn-sm" target="_blank">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2024-08-28</span></p><p><img
+                      src="{% static 'images/new_red.gif' %}" alt="New Notice">Admission
+                    open Now.....<br><a
+                      href
+                      class="btn btn-sm" target="_blank">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2024-08-02</span></p><p><img
+                      src="{% static 'images/new_red.gif' %}" alt="New Notice">Admission
+                    open Now.....<br><a
+                      href
+                      class="btn btn-sm" target="_blank">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2024-07-24</span></p><p>
+                  </center>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-4   col-sm-12  col-12">
+            <div class="card" style="min-height:388px;max-height:388px;">
+              <h5 class="card-header"
+                style="color:#af0202; font-weight: 500; "><strong><center>
+                    DEEPESHWER VIDYA NIKETAN <br>
+                    PARSAGARH</br></center></strong></h5>
+            <div class="card-body container-fluid">
+              <ul style="list-style-type: none; ">
+                <li><i class="fa-solid fa-star"></i>कुशल-योग्य एवं अनुभवी
+                  शिक्षकों द्वारा शिक्षा की व्यवस्या।</li>
+                <li><i class="fa-solid fa-star"></i>प्रेम और साहचर्य के बीच सख्त
+                  अनुशासन ।</li>
+                <li><i class="fa-solid fa-star"></i>बच्चों के सर्वागीण विकास पर
+                  व्यक्तिगत घ्यान ।</li>
+                <li><i class="fa-solid fa-star"></i>अलग खिलौना कक्षः जहाँ बच्चे
+                  खेलते-खेलते सीखते हैं।</li>
+                <li><i class="fa-solid fa-star"></i>प्रत्येक कक्षा में
+                  सी.सी.टी.वी. की व्यवस्था ।</li>
+                <li><i class="fa-solid fa-star"></i>कम्प्यूटर कदक्ष की व्यवस्था
+                  ।</li>
+                <li><i class="fa-solid fa-star"></i>शांत वातावरण में पठन पाठन की
+                  व्यवस्था ।</li>
+                <li><i class="fa-solid fa-star"></i>निर्धन छात्र एवं छालाओं हेतू
+                  निःशुल्क शिक्षा की व्यवस्था।</li>
+                <li><i class="fa-solid fa-star"></i>वर्ग 9वीं एवं 10वीं के लिए
+                  अलग से शिक्षण की व्यवस्था ।</li>
+                <li><i class="fa-solid fa-star"></i>प्रत्येक कक्षा में सीट समिति
+                  है। अतः पहले नामांकन कराकर उचित लाभ पायें।</li>
+              </ul>
+              <a href="/addmissionform.html"
+                class="btn btn-primary button1 d-flex justify-content-center">Admission
+                Now</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4   col-sm-12  col-12">
+          <div class="card" style="min-height:388px;max-height:388px;">
+            <h5 class="card-header" style="color:#af0202"><strong><center>
+                  <i class="fa fa-bullhorn"
+                    style="font-size:36px;color:red"></i> NOTICE
+                  BOARD</center></strong></h5>
+            <div class="card-body marquee-container">
+              <div class="marquee-content" id="">
+                <center>
+
+                  <p><img src="{% static 'images/new_red.gif' %}"
+                      alt="New Notice">Admission open Now.....<br><a
+                      href class="btn btn-sm">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2025-01-02</span></p><p><img
+                      src="{% static 'images/new_red.gif' %}" alt="New Notice">Admission
+                    open Now.....<br><a
+                      href
+                      class="btn btn-sm" target="_blank">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2024-08-28</span></p><p><img
+                      src="{% static 'images/new_red.gif' %}" alt="New Notice">Admission
+                    open Now.....<br><a
+                      href
+                      class="btn btn-sm" target="_blank">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2024-08-02</span></p><p><img
+                      src="{% static 'images/new_red.gif' %}" alt="New Notice">Admission
+                    open Now.....<br><a
+                      href
+                      class="btn btn-sm" target="_blank">View More</a><span
+                      style="text-align: left; color:green;"> &nbsp;
+                      &nbsp;2024-07-24</span></p><p>
+                  </center>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid mt-lg-5 mt-sm-2 mt-2 p-0 justify-content-between">
+        <div class="row m-2 ">
+
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="card centercard " style="width: 18rem;">
+              <img src="{% static 'images/dvn founder.jpg' %}"
+                class="card-img-top img-fluid " alt="...">
+              <div class="card-body "
+                style="background-color: rgb(110, 110, 243); border: redius 5px;">
+                <h5 class="card-title" style="font-weight: 900;">Director:</h5>
+                <p class="card-text">
+                  <h6>Name: Udaykumar Singh</h6>
+                  <p>DOB: 01/01/1987</p>
+                </p>
+                <a href="#"
+                  class="btn btn-primary  button1 d-flex justify-content-center">Go
+                  somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 ">
+            <div class="card centercard " style="width: 18rem;">
+              <img src="{% static 'images/dvn principal.jpg' %}"
+                class="card-img-top img-fluid " alt="...">
+              <div class="card-body "
+                style="background-color: rgb(110, 110, 243); border: redius 5px;">
+                <h5 class="card-title" style="font-weight: 900;">Principal:</h5>
+                <p class="card-text">
+                  <h6>Name: Satayparkash Singh</h6>
+                  <p>DOB: 01/01/1998</p>
+                  <br><br><br><br>
+                </p>
+                <a href="#"
+                  class="btn btn-primary button1 d-flex justify-content-center">Go
+                  somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-6 ">
+            <div class="card centercard ">
+              <img src="{% static 'images/dvn all staffs.jpg' %}"
+                class="card-img-top img-fluid  immg" alt="...">
+              <div class="card-body "
+                style="background-color: rgb(110, 110, 243); border: redius 5px;">
+                <h5 class="card-title" style="font-weight: 900;">All
+                  Staffs:</h5>
+                <p class="card-text">
+                  <p>All staff is very cooperative</p>
+                  <br><br><br></p>
+                <a href="#"
+                  class="btn btn-primary button1 d-flex justify-content-center">Go
+                  somewhere</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container-fluid gy-2 gx-2 mt-5"
+        style="background-color: antiquewhite;">
+        <div class="row">
+          <div class="col-6" style="text-align:left;">
+
+            <h6 class="title"
+              style="color:#0f0b0b;text-align:left; margin-top: 10px; font-weight: 800;">CONTACT
+              US:</h6>
+            <ul class="nospace linklist contact" style="list-style-type: none;">
+              <br>
+
+              <li><i class="fa fa-map-marker"></i>
+
+                <a href="https://maps.app.goo.gl/U7k3EpfcReP699Z47">Ekma - Parsa
+                  Road Garh Road Badheyan, Dakhin Parsa, Bihar 841220</a>
+
+              </li>
+              <hr>
+              <!-- <li><i class="fa fa-phone"></i> +91 888 766 7635<br>
+                  </i> +91 945 189 6967</li>-->
+              <li
+                onclick="window.open ('https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhwdwSsXXCMlcWSrDbflvbrdVflTnqlgKxWcJFkGqRvxNcKkHrzZMJZwzwHskvxTXcFTg')">
+                <a href><i class="fa-solid fa-envelope"></i>
+                  dvn841220@gmail.com</li></a>
+              <hr>
+              <li
+                onclick="window.open ('https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhwdwSsXXCMlcWSrDbflvbrdVflTnqlgKxWcJFkGqRvxNcKkHrzZMJZwzwHskvxTXcFTg')">
+                <a href><i class="fa-solid fa-envelope"></i>
+                  xyz@gmail.com</li></a>
+              <hr>
+            </ul>
+
+          </div>
+          <div class="col-6 ">
+
+            <h6 class="title"
+              style="color:#0a0808; margin-top: 10px; font-weight: 800;">REACH
+              OUT HERE:</h6>
+            <a target="_blank" href="https://maps.app.goo.gl/U7k3EpfcReP699Z47"><img
+                src="{% static 'images/location.JPG' %}" alt class="img-fluid"></a>
+            <!-- <iframe
+              src="https://maps.app.goo.gl/U7k3EpfcReP699Z47"
+              width="100%" height="300" frameborder="0" style="border:0"
+              allowfullscreen></iframe> -->
+
+          </div>
+
+        </div>
+      </div>
+      
+      <h3 style="color: red; text-align:center;">This website is under development......</h3>
+
+      <div class="container-fluid" style="background-color:#1a1a1a; color:#FFFFFF; height: 80px;">
+        <div class="row">
+          <div class="col-6 col-lg-6 col-sm-6 col-md-6 ">
+            <div style="text-align: start; padding-top: 30px;">
+            Copyright
+            © 2025 - All Rights Reserved - <a target="_blank" href="/mywebsite"
+              style="color:#FFFFFF; ">Abhishek_Pandit</a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-6 col-sm-6 col-md-6">
+            <div style="text-align: end; ">
+              <img src="{% static 'images/ABHISHEK2.jpg' %}" alt="" style="width: 80px; height: 80px; border-radius: 50%; padding-top: 0px;">
+            Designed
+            by <a target="_blank" href="/mywebsite"
+              style="color:yellow; padding-top: 30px;"
+              title="Techsrijan Consultancy Services Pvt Ltd">Abhishek_Pandit..</a>
+            </div>
+
+          </div>
+       
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    </body>
+  </html>
