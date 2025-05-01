@@ -29,6 +29,7 @@ This is a **Django-based School Management System** designed to simplify managin
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/webdevabhi91/myproject.git
-   cd myproject
-
+   https://github.com/techtitan7/school-management-.git
+   cd school-management
+   
+  ```
