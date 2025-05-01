@@ -27,9 +27,14 @@ This is a **Django-based School Management System** designed to simplify managin
 
 ## 🚀 Getting Started  
 
+
+
 1. **Clone the Repository**  
    ```bash
    https://github.com/techtitan7/school-management-.git
    cd school-management
-   
+
   ```
+
+
+## Thank You !!!!!
