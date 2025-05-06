@@ -15,6 +15,18 @@
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet">
 
+            <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "b-XryMu0qPYRj-rO3",
+      });
+   })();
+</script>
+        <script src="{% static 'script/emailmassage' %}"></script>
+
         <title>Abhishek_Pandit..</title>
         <style>
         body {
@@ -434,12 +446,12 @@
 
             </ul>
         </section>
-        <h2 style="text-align: center; weight: bold; color:rgb(255, 254, 254);">Contact US</h2>
+        <h2 style="text-align: center; font-weight: bold; color:rgb(255, 254, 254);">Contact US</h2>
         <div class="contact__container container grid">
            
             <div class="contact__content1">
               <div class="contact__information">
-                <i class="uil uil-phone contact__icon"></i>
+                <i style=" margin-right: 10px;" class="fa-solid fa-phone"></i>
   
                 <div class="contact__content">
                   <h3 class="contact__title">Call me</h3>
@@ -447,7 +459,7 @@
                 </div>
               </div>
               <div class="contact__information">
-                <i class="uil uil-envelope contact__icon"></i>
+                <i style=" margin-right: 10px;" class="fa-solid fa-envelope"></i>
   
                 <div class="contact__content">
                   <h3 class="contact__title">Email</h3>
@@ -455,7 +467,7 @@
                 </div>
               </div>
               <div class="contact__information">
-                <i class="uil uil-map-marker contact__icon"></i>
+                <i style=" margin-right: 10px;" class="fa-solid fa-location-dot"></i>
   
                 <div class="contact__content">
                   <h3 class="contact__title">Location</h3>
@@ -466,7 +478,7 @@
   
   
           
-            <form action="mail-handler.php" method="post" class="contact__form grid" name="myContactForm">
+            <form  class="contact__form grid" name="myContactForm">
               <div class="contact__inputs grid">
                 <div class="contact__content">
                   <label for="name" class="contact__label">Name:</label>
@@ -476,6 +488,9 @@
                   <label for="email" class="contact__label">Email:</label>
                   <input type="email" class="contact__input" name="email">
                 </div>
+                <div class="contact__content">
+                  <label for="subject" class="contact__label">Subject:</label>
+                  <input type="text" class="contact__input" name="subject">
               </div>
               <div class="contact__content">
                 <label for="message" class="contact__label">Message:</label>
@@ -485,17 +500,18 @@
      
   
               <div>
-                <input type="submit" name="submit" class="button button--flex" value="Send Message" style="
+                <button type="submit" name="submit" class="button button--flex" value="Send Message" style="
                     border: none;
                     position: relative;
                     font-weight: 500;
                     font-family: 'Poppins';
-                  ">
+                  " onclick=" sendEmail()">Submit</button>
               </div>
               
              
             </form>
           </div>
+        </div>
 
         <footer style="color: antiquewhite; text-align: center; margin-top: 50px; margin-bottom: 0px; background-color: #092e20;">
             <p>&copy; 2025 Abhishek_Pandit. All rights reserved</p>
@@ -511,6 +527,7 @@
             });
         });
     </script>
+    
     </body>
 
 </html>
