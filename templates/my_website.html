@@ -128,6 +128,45 @@
             padding: 10px;
             text-align: left;
         }
+
+        .contact__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            background-color:rgb(240, 239, 243);
+            padding: 20px;
+            border-radius: 10px;
+            border-color: solid black 1px;
+        }
+        .contact__content1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .contact__content1 h1{
+            text-align: center;
+            font-size: 30px;
+            color: #0783f8;
+            margin-bottom: 20px;
+        }
+        .contact__inputs .contact__content .contact__label{
+            font-size: 16px;
+            font-weight: bold;
+            color: #0783f8;
+            margin-bottom: 5px;
+        }
+        .contact__form .contact__content .contact__label{
+            font-size: 16px;
+            font-weight: bold;
+            color: #0783f8;
+            margin-bottom: 5px;
+        }
+     
         .scroll ul li{
             color: white;
             margin: 15px 20px;
@@ -136,6 +175,141 @@
             display: flex;
             justify-content: center;
         }
+        .scroll ul li i{
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .scroll ul li:hover{
+            color: #0783f8;
+            transition: 0.5s;
+        }
+        .scroll ul li:hover i{
+            color: #0783f8;
+            transition: 0.5s;
+        }
+        .scroll{
+            background-color: #181527;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-color: solid black 1px;
+        }
+        .scroll table{
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .contact__information {
+           
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .contact__information .contact__content h3{
+            margin: 0;
+            font-size: 18px;
+            color:rgb(43, 137, 238);
+        }
+        .contact__information .contact__content span{
+            font-size: 14px;
+            color: #555;
+        }
+        .contact__icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #0783f8;
+        }
+        .contact__title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .contact__subtitle {
+            font-size: 14px;
+            color: #ccc;
+        }
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .contact__content {
+            margin-bottom: 20px;
+        }
+        .contact__label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .contact__input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+        }
+        .contact__input:focus {
+            border-color: #0783f8;
+            outline: none;
+        }
+        .button {
+            background-color: #0783f8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #056bb5;
+        }
+        .button--flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button1 {
+            background-color: #0783f8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+        .button1:hover {
+            background-color: #056bb5;
+        }
+
+        .button1:focus {
+            outline: none;
+            box-shadow: 0 0 5px #0783f8;
+        }
+        .button1:active {
+            transform: scale(0.98);
+        }
+        .button1:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .button1:disabled:hover {
+            background-color: #ccc;
+
+        }
+        .button1:disabled:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        .button1:disabled:active {
+            transform: none;
+        }
+      
+
+
     </style>
     </head>
 
@@ -269,6 +443,68 @@
 
             </ul>
         </section>
+        <h2 style="text-align: center; weight: bold; color:rgb(255, 254, 254);">Contact US</h2>
+        <div class="contact__container container grid">
+           
+            <div class="contact__content1">
+              <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+  
+                <div class="contact__content">
+                  <h3 class="contact__title">Call me</h3>
+                  <span class="contact__subtitle">+919117613017</span>
+                </div>
+              </div>
+              <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+  
+                <div class="contact__content">
+                  <h3 class="contact__title">Email</h3>
+                  <span class="contact__subtitle">akp167585@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+  
+                <div class="contact__content">
+                  <h3 class="contact__title">Location</h3>
+                  <span class="contact__subtitle">Saran , Bihar</span>
+                </div>
+              </div>
+            </div>
+  
+  
+          
+            <form action="mail-handler.php" method="post" class="contact__form grid" name="myContactForm">
+              <div class="contact__inputs grid">
+                <div class="contact__content">
+                  <label for="name" class="contact__label">Name:</label>
+                  <input type="text" class="contact__input" name="name">
+                </div>
+                <div class="contact__content">
+                  <label for="email" class="contact__label">Email:</label>
+                  <input type="email" class="contact__input" name="email">
+                </div>
+              </div>
+              <div class="contact__content">
+                <label for="message" class="contact__label">Message:</label>
+                <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
+              </div>
+              
+     
+  
+              <div>
+                <input type="submit" name="submit" class="button button--flex" value="Send Message" style="
+                    border: none;
+                    position: relative;
+                    font-weight: 500;
+                    font-family: 'Poppins';
+                  ">
+              </div>
+              
+             
+            </form>
+          </div>
 
         <footer style="color: antiquewhite; text-align: center; margin-top: 50px; margin-bottom: 0px; background-color: #092e20;">
             <p>&copy; 2025 Abhishek_Pandit. All rights reserved</p>
