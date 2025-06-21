@@ -27,5 +27,6 @@ urlpatterns = [
     # path('signpData/', views.signupdata, name="signpData"),
     path('syllabus/', views.syllabus, name='syllabus'),
     path('teacher_login/', views.teacher_login, name='teacher_login'),
+    path('result_main/', views.result_main, name='result_main'),
     
 ]

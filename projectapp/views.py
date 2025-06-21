@@ -19,6 +19,9 @@ def syllabus(request):
 def teacher_login(request):
     return render(request, "teacher_login.html")
 
+def result_main(request):
+    return render(request, "result_main.html")
+
 
 
 # def signupdata(request):

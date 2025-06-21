@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Teacher Login</title>
+    <title>Student Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <style>
@@ -85,10 +85,21 @@
             margin-bottom: 16px;
             font-size: 15px;
         }
+        .user-icon {
+            text-align: center;
+            font-size: 60px;
+            color: #1976d2;
+            margin-bottom: 2px;
+        }
+    
     </style>
 </head>
 <body>
     <div class="login-container">
+    
+       <div class="user-icon">
+    <img src="{% static 'images/suser.png' %}" alt="User Icon" style="width: 70px; height: 70px;">
+</div>
         <h2>STUDENT LOGIN</h2>
         {% if error_message %}
             <div class="error-message">{{ error_message }}</div>
