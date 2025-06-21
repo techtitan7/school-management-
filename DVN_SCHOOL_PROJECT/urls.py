@@ -25,5 +25,7 @@ urlpatterns = [
     path('addmissionform/', views.addmissionform, name="addmissionform"),
     path('signup/', views.signup_page, name='signup'),
     # path('signpData/', views.signupdata, name="signpData"),
-    path('mywebsite/', views.my_website, name='mywebsite'),
+    path('syllabus/', views.syllabus, name='syllabus'),
+    path('teacher_login/', views.teacher_login, name='teacher_login'),
+    
 ]

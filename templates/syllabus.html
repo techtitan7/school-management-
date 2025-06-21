@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 1 to 9 Syllabus</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; margin: 30px; background: #f8f9fa;
+         }
+        h1 { 
+            text-align: center; 
+            color:rgb(255, 0, 0);  
+
+
+        }
+        .syllabus-table {
+             width: 80%; margin: 0 auto; border-collapse: collapse; background: #fff; 
+            }
+        .syllabus-table th, .syllabus-table td {
+             border: 1px solid #ccc; padding: 12px; text-align: left; 
+            }
+        .syllabus-table th {
+             background: #007bff; color: #fff;
+             }
+        .syllabus-table tr:nth-child(even) {
+             background: #f2f2f2; 
+            }
+        .download-link {
+             color: #007bff; text-decoration: none; 
+            }
+        .download-link:hover {
+             text-decoration: underline; 
+            }"
+    </style>
+</head>
+<body>
+    <h1>Class "Nursery" to "9" syllabus</h1>
+    <table class="syllabus-table">
+        <thead>
+            <tr>
+                <th>Class</th>              
+                <th>Subjects</th>
+                <th>Syllabus Download</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Nursery</td>
+            <td>English, Hindi, Mathematics (Besic) </td>
+            <td>
+                <a href="https://example.com/nursery-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+        </tr>
+
+        <tr>
+            <td>KG 1</td>
+            <td>English, Hindi, Mathematics (Besic) </td>
+            <td>
+                <a href="https://example.com/kg-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+         <tr>
+            <td>KG 2</td>
+            <td>English, Hindi, Mathematics (Besic) </td>
+            <td>
+                <a href="https://example.com/kg-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 1</td>
+            <td>English, Hindi, Mathematics, EVS , GK</td>
+            <td>
+                <a href="https://example.com/class1-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 2</td>
+            <td>English, Hindi, Mathematics, EVS, GK</td>
+            <td>
+                <a href="https://example.com/class2-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 3</td>
+            <td>English, Hindi, Mathematics, EVS, GK</td>
+            <td>
+                <a href="https://example.com/class3-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 4</td>
+            <td>English, Hindi, Mathematics, EVS, GK</td>
+            <td>
+                <a href="https://example.com/class4-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 5</td>
+            <td>English, Hindi, Mathematics, EVS, GK</td>
+            <td>
+                <a href="https://example.com/class5-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 6</td>
+            <td>English, Hindi, Mathematics, Science, Social Science, GK</td>
+            <td>
+                <a href="https://example.com/class6-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 7</td>
+            <td>English, Hindi, Mathematics, Science, Social Science, GK</td>
+            <td>
+                <a href="https://example.com/class7-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Class 8</td>
+            <td>English, Hindi, Mathematics, Science, Social Science, GK</td>
+            <td>
+                <a href="https://example.com/class8-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+            </tr>
+        <tr>
+            <td>Class 9</td>
+            <td>English, Hindi, Mathematics, Science, Social Science, GK</td>
+            <td>
+                <a href="https://example.com/class9-syllabus.pdf" class="download-link" target="_blank">Download PDF</a>
+            </td>
+        </tr>
+        {% for cls in classes %}
+            <tr>
+                <td>Class {{ cls.number }}</td>
+                <td>
+                    {% for subject in cls.subjects %}
+                        {{ subject }}{% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                </td>
+                <td>
+                    <a href="{{ cls.syllabus_url }}" class="download-link" target="_blank">Download PDF</a>
+                </td>
+            </tr>
+        {% endfor %}
+
+        
+        <tbody>
+
+
+            {% for cls in classes %}
+            <tr>
+                <td>Class {{ cls.number }}</td>
+                <td>
+                    {% for subject in cls.subjects %}
+                        {{ subject }}{% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                </td>
+                <td>
+                    <a href="{{ cls.syllabus_url }}" class="download-link" target="_blank">Download PDF</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

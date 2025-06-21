@@ -7,6 +7,8 @@
     <title>Teacher Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         body {
             background: #f4f7fa;
@@ -24,13 +26,13 @@
         }
         .login-container h2 {
             text-align: center;
-            margin-bottom: 28px;
+            margin-bottom: 25px;
             color:rgb(7, 127, 255);
-            font-weight: 1000;
+            font-weight: 800;
             font-size: 36px;
         }
         .form-group {
-            margin-bottom: 22px;
+            margin-bottom: 20px;
         }
         .form-group label {
             display: block;
@@ -85,11 +87,24 @@
             margin-bottom: 16px;
             font-size: 15px;
         }
+        .user-icon {
+            text-align: center;
+            font-size: 60px;
+            color: #1976d2;
+            margin-bottom: 20px;
+        }
+    
+
+       
+        
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>STUDENT LOGIN</h2>
+       <div class="user-icon">
+    <img src="{% static 'images/user.png' %}" alt="User Icon" style="width: 70px; height: 70px;">
+</div>
+ <h2>TEACHER LOGIN</h2>
         {% if error_message %}
             <div class="error-message">{{ error_message }}</div>
         {% endif %}
@@ -103,19 +118,20 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
-             <div>
+            <div>
                 
            <label style="display: inline-block; margin-right: 10px; margin-bottom: 10px;">
   <input type="checkbox"> Remember me
 </label>
 
 </div>
+            
             <button type="submit" class="login-btn">Login</button>
         </form>
         <div class="login-footer">
             Forgot your password? <a href="#">Reset</a>
             |
-            Teacher login <a href="/teacher_login">click here</a>
+            Student login <a href="/signup">click here</a>
         </div>
     </div>      
 </body>

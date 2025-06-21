@@ -13,6 +13,14 @@ def addmissionform(request):
 def signup_page(request):
     return render(request, "signup_page.html")
 
+def syllabus(request):
+    return render(request, "syllabus.html")
+
+def teacher_login(request):
+    return render(request, "teacher_login.html")
+
+
+
 # def signupdata(request):
 
 #     if request.method=="POST":
@@ -24,5 +32,3 @@ def signup_page(request):
 
 #     return render(request,"signup_page.html")
 
-def my_website(request):
-    return render(request, "my_website.html")
