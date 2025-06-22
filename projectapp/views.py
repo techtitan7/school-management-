@@ -22,6 +22,15 @@ def teacher_login(request):
 def result_main(request):
     return render(request, "result_main.html")
 
+def result_rollno(request):
+    return render(request, "result_rollno.html")
+
+def aboutus(request):
+    return render(request, "aboutus.html")
+
+def c_us(request):
+    return render(request, "c_us.html")
+
 
 
 # def signupdata(request):

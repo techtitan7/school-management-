@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | DVN School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2d3e50;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            max-width: 700px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 40px 32px 32px 32px;
+        }
+        .about-section h1 {
+            color: #2d3e50;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .about-section h2 {
+            color: #3498db;
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+        .about-section ul {
+            list-style: disc inside;
+            padding-left: 0;
+            margin-bottom: 18px;
+        }
+        .about-section li {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+        .about-section p {
+            color: #34495e;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        footer {
+            background: #2d3e50;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+            margin-top: 40px;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://dvnschoolparsagarh.pythonanywhere.com">Home</a>
+            
+            <a href="#">Contact</a>
+            <a href="/addmissionform">Admissions</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h1>About DVN School</h1>
+            <p>
+                DVN School is dedicated to providing a nurturing and innovative learning environment for students of all backgrounds. 
+                Our mission is to empower students with knowledge, skills, and values to become responsible global citizens.
+            </p>
+            <h2>Our Vision</h2>
+            <p>
+                To inspire excellence in education and foster a community of lifelong learners.
+            </p>
+            <h2>Our Values</h2>
+            <ul>
+                <li>Integrity</li>
+                <li>Respect</li>
+                <li>Innovation</li>
+                <li>Collaboration</li>
+                <li>Excellence</li>
+            </ul>
+            <h2>Meet Our Team</h2>
+            <p>
+                Our dedicated team of educators and staff are committed to supporting every student's academic and personal growth.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DVN School. All rights reserved.</p>
+    </footer>
+</body>
+</html>

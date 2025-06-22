@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Lookup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8fb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #fff;
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 30px 40px 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+        h2 {
+            text-align: center;
+            color: #2d3e50;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #34495e;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 18px;
+            border: 1px solid #bfc9d1;
+            border-radius: 5px;
+            font-size: 15px;
+            background: #f9fafb;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button[type="submit"]:hover {
+            background: #217dbb;
+        }
+        .result, .error {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .result {
+            background: #eafaf1;
+            color: #218c5a;
+            border: 1px solid #b7e4c7;
+        }
+        .error {
+            background: #fdeaea;
+            color: #d32f2f;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Check Your Result</h2>
+       
+        
+
+        <form method="post">
+          
+            <label for="student_class">Class:</label>
+            <input type="text" id="student_class" name="student_class" required>
+
+            <label for="roll_no">Roll No:</label>
+            <input type="text" id="roll_no" name="roll_no" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <button type="submit">Get Result</button>
+        </form>
+
+        
+    </div>
+</body>
+</html>
